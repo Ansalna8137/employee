@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+</head>
+<body style="background-color: #82cdd5;">
+      <div class="container-fluid">
+          <div class="row">
+            <div class="col-6">
+                <br>
+                <h1 style="color: blue;" id="head">Welcome to user</h1>
+                 </div>
+             <div class="col-6">
+                <br>
+           <button onclick="logout()" class="btn btn-danger" style="float: right;">logout</button>
+             </div>
+            
+          </div>
+          <div class="row2">
+            <div class="col6 ms-5"><img src="./images/task-registration-2081679-1756042.webp" style="margin-top: 80px; "  width="350px" height="300px" alt=""></div>
+            <div class="col6"><form id="myform" action="">
+                <h1 style="color: blue;">Employee Details</h1>
+                <br>
+                
+                <input id="empid" class="form-control" type="text" placeholder="Employee Id">
+                <input id="empname" class="form-control" type="text" placeholder="Employee Name">
+                <input id="empadd" class="form-control" type="text" placeholder="Employee address">
+                <input id="empdes" class="form-control" type="text" placeholder="Employee Designation">
+                <input id="empexp" class="form-control" type="text" placeholder="Employee Experience">
+                <input id="empsal" class="form-control" type="text" placeholder="Employee Salary">
+                <button onclick="addEmployee()"  class="form-control" style="color: blue; border-color: blue; background-color: #82cdd5; margin-top: 12px;">Add Employee</button>
+            </form>
+            </div>
+            <div class="col6-1">
+                <br><br><br>
+                <input id="emp" class="form-control" type="search" id="search"  placeholder="Search">
+            
+                <button  class="form-control" style="width: 100px; color: rgb(228, 228, 236);background-color: blue;" type="button" onclick="searchemp()"> Search </button>
+            </div>
+           <div id="result">
+
+                 </div>
+            
+          </div>
+      </div>
+      
+
+      </div>
+      <script src="./home.js"></script>
+      <style>
+        .row2{
+            display: flex;
+            margin-left: 200px;
+            margin-top: 50px;
+        }
+        .col6{
+            justify-content: space-between;
+            padding-inline: 15px;
+           
+        }
+        input{
+            margin-bottom: 3px;
+            
+        }
+        .col6-1{
+            margin-top: 6px;
+            width: 350px;
+        }
+      </style>
+</body>
+</html>
